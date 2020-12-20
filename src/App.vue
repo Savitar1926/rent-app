@@ -1,13 +1,17 @@
 <template>
-  <div id="app" class="h-full w-full bg-asphalt-900 p-6">
+  <div id="app" class="h-full w-full bg-white p-6">
+    <router-view />
     <div
       id="nav"
-      class="fixed bottom-4 flex items-center p-2 font-semibold text-xl text-white"
+      class="fixed bottom-5 p-2 font-semibold text-xl text-asphalt-700 w-10/12"
     >
-      <router-link to="/" class="mr-10">Home</router-link>
-      <router-link to="/about">About</router-link>
+      <div class="w-full flex justify-between">
+        <router-link to="/">Home</router-link>
+        <router-link to="/about">About</router-link>
+        <router-link to="#">Home</router-link>
+        <router-link to="#">About</router-link>
+      </div>
     </div>
-    <router-view class="mt-10" />
   </div>
 </template>
 
@@ -17,6 +21,6 @@
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #ff5f35;
 }
 </style>

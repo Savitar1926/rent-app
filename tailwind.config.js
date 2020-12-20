@@ -15,7 +15,11 @@ module.exports = {
     '700': '#120f0f', 
     '800': '#0e0c0c', 
     '900': '#0c0a0a'
-}
+        },
+        'rent': {
+    '500': '#ff5f35', 
+        },
+        
       },
        fontFamily: {
         'Poppins': ['Poppins', 'sans-serif']
@@ -23,7 +27,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+       backgroundColor: ['active'],
+    },
   },
   plugins: [],
 }
